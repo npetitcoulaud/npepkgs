@@ -1,4 +1,4 @@
-{ pkgs ? import <nixpkgs> { } }:
+{ pkgs ? import <nixpkgs> { }, system ? builtins.currentSystem }:
 
 {
   space-theme = pkgs.callPackage ./pkgs/space-theme { };
